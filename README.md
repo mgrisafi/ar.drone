@@ -1,2 +1,2 @@
 # ar.drone
-Ar Drone project
+Ar Drone project compiled in C# and developed in Unity.
