@@ -1,0 +1,21 @@
+using Systems.Collections;
+using Systems.Collections.Generic;
+using UnityEngine;
+
+public class GameManager : MonoBehavior
+{
+    DroneController _DroneController;
+    
+    void Start()
+    {
+      
+    }
+    
+    void Updated()
+    {
+        float speedX = Input.GetAxis("Horizontal");
+        float speedZ = Input.GetAxis("Vertical");
+        
+        _DroneController.Move(speedX, speedZ);
+    }
+}
